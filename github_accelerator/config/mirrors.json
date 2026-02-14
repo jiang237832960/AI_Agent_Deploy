@@ -1,0 +1,140 @@
+{
+    "version": "1.0.0",
+    "last_update": "2026-02-14T16:43:30.136567",
+    "update_interval_hours": 24,
+    "mirrors": [
+        {
+            "id": "ghproxy",
+            "name": "ghproxy",
+            "url": "https://ghproxy.com/",
+            "description": "国内镜像源，速度快",
+            "test_url": "https://ghproxy.com/https://github.com",
+            "domains": [
+                "github.com",
+                "raw.githubusercontent.com",
+                "githubusercontent.com"
+            ],
+            "status": "unavailable",
+            "last_check": "2026-02-14T16:42:47.649725",
+            "latency_ms": null,
+            "success_rate": 0.0,
+            "check_count": 1,
+            "success_count": 0
+        },
+        {
+            "id": "fastgit",
+            "name": "fastgit",
+            "url": "https://fastgit.org/",
+            "description": "FastGit 镜像源",
+            "test_url": "https://fastgit.org/",
+            "domains": [
+                "github.com",
+                "raw.githubusercontent.com"
+            ],
+            "status": "available",
+            "last_check": "2026-02-14T16:42:48.220079",
+            "latency_ms": 570,
+            "success_rate": 1.0,
+            "check_count": 1,
+            "success_count": 1
+        },
+        {
+            "id": "jsdelivr",
+            "name": "jsdelivr",
+            "url": "https://cdn.jsdelivr.net/",
+            "description": "jsDelivr CDN 加速",
+            "test_url": "https://cdn.jsdelivr.net/",
+            "domains": [
+                "raw.githubusercontent.com"
+            ],
+            "path_prefix": "gh/",
+            "status": "available",
+            "last_check": "2026-02-14T16:42:49.601005",
+            "latency_ms": 1380,
+            "success_rate": 1.0,
+            "check_count": 1,
+            "success_count": 1
+        },
+        {
+            "id": "mirrorcdn",
+            "name": "mirrorcdn",
+            "url": "https://mirror.ghproxy.com/",
+            "description": "ghproxy 备用源",
+            "test_url": "https://mirror.ghproxy.com/",
+            "domains": [
+                "github.com"
+            ],
+            "status": "unavailable",
+            "last_check": "2026-02-14T16:43:09.634979",
+            "latency_ms": null,
+            "success_rate": 0.0,
+            "check_count": 1,
+            "success_count": 0
+        },
+        {
+            "id": "gitclone",
+            "name": "gitclone",
+            "url": "https://gitclone.com/",
+            "description": "GitClone 镜像源",
+            "test_url": "https://gitclone.com/",
+            "domains": [
+                "github.com"
+            ],
+            "status": "available",
+            "last_check": "2026-02-14T16:43:10.107717",
+            "latency_ms": 472,
+            "success_rate": 1.0,
+            "check_count": 1,
+            "success_count": 1
+        },
+        {
+            "id": "hub.fastgit",
+            "name": "hub.fastgit",
+            "url": "https://hub.fastgit.xyz/",
+            "description": "FastGit Hub 镜像",
+            "test_url": "https://hub.fastgit.xyz/",
+            "domains": [
+                "github.com"
+            ],
+            "status": "unavailable",
+            "last_check": "2026-02-14T16:43:30.136543",
+            "latency_ms": null,
+            "success_rate": 0.0,
+            "check_count": 1,
+            "success_count": 0
+        }
+    ],
+    "hosts": {
+        "github.com": "20.205.243.166",
+        "github.global.ssl.fastly.net": "151.101.1.69",
+        "assets.github.com": "185.199.108.153",
+        "raw.githubusercontent.com": "185.199.108.133",
+        "codeload.github.com": "20.205.243.166",
+        "objects.githubusercontent.com": "185.199.108.133"
+    },
+    "hosts_sources": [
+        {
+            "name": "GitHub IP",
+            "url": "https://api.github.com/meta",
+            "type": "api",
+            "enabled": true
+        }
+    ],
+    "test_urls": [
+        "https://github.com",
+        "https://raw.githubusercontent.com",
+        "https://github.com/facebook/react"
+    ],
+    "alert_config": {
+        "enabled": true,
+        "email": "",
+        "webhook": "",
+        "min_success_rate": 0.5,
+        "max_latency_ms": 5000
+    },
+    "rollback_config": {
+        "enabled": true,
+        "max_backup_count": 10,
+        "auto_rollback_on_failure": true
+    }
+}

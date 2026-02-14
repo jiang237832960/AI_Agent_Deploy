@@ -1,0 +1,32 @@
+[
+  {
+    "timestamp": "2026-02-14T16:42:36.897860",
+    "type": "backup",
+    "message": "配置已备份: d:\\AI_Agent_Deploy\\github_accelerator\\scripts\\..\\backup\\mirrors_20260214_164236.json",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-02-14T16:43:30.137609",
+    "type": "alert",
+    "message": "镜像 ghproxy 成功率过低: 0.0",
+    "details": {
+      "level": "warning"
+    }
+  },
+  {
+    "timestamp": "2026-02-14T16:43:30.138367",
+    "type": "alert",
+    "message": "镜像 mirrorcdn 成功率过低: 0.0",
+    "details": {
+      "level": "warning"
+    }
+  },
+  {
+    "timestamp": "2026-02-14T16:43:30.139131",
+    "type": "alert",
+    "message": "镜像 hub.fastgit 成功率过低: 0.0",
+    "details": {
+      "level": "warning"
+    }
+  }
+]

@@ -1,0 +1,49 @@
+{
+    "version": "1.0.0",
+    "project_name": "AI 助手工具集",
+    "description": "Windows 系统工具集，包含系统检测、开发环境配置、GitHub加速等功能",
+    "author": "AI Agent Deploy",
+    "python_version": "3.7",
+    "modules": {
+        "system_info": {
+            "enabled": true,
+            "display_name": "系统环境检测",
+            "description": "检测系统硬件信息及内存详细分析",
+            "script": "system_info_checker/scripts/start.py",
+            "dependencies": []
+        },
+        "dev_env": {
+            "enabled": true,
+            "display_name": "开发环境配置",
+            "description": "检测并部署开发环境",
+            "script": "dev_env_setup/scripts/start.py",
+            "dependencies": []
+        },
+        "github_accelerator": {
+            "enabled": true,
+            "display_name": "GitHub 加速",
+            "description": "配置 GitHub 镜像加速",
+            "script": "github_accelerator/scripts/start.py",
+            "dependencies": []
+        },
+        "file_search": {
+            "enabled": true,
+            "display_name": "文件搜索",
+            "description": "快速搜索本地文件",
+            "script": "file_search/scripts/start.py",
+            "dependencies": []
+        }
+    },
+    "logging": {
+        "enabled": true,
+        "level": "INFO",
+        "log_dir": "logs",
+        "max_file_size": "10MB",
+        "backup_count": 5
+    },
+    "paths": {
+        "tools_dir": "tools",
+        "backup_dir": "backup",
+        "config_dir": "config"
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "everything_path": "..\\tools\\Everything\\es.exe",
+    "max_results": 100,
+    "show_hidden": false,
+    "default_search_mode": "filename",
+    "search_modes": {
+        "filename": {
+            "name": "按文件名搜索",
+            "description": "搜索文件名包含关键词的文件"
+        },
+        "extension": {
+            "name": "按扩展名搜索",
+            "description": "搜索指定扩展名的文件"
+        },
+        "size": {
+            "name": "按大小搜索",
+            "description": "搜索符合大小条件的文件"
+        },
+        "date": {
+            "name": "按修改时间搜索",
+            "description": "搜索指定时间范围内修改的文件"
+        }
+    },
+    "size_units": {
+        "b": 1,
+        "kb": 1024,
+        "mb": 1048576,
+        "gb": 1073741824
+    },
+    "file_types": {
+        "code": ["py", "js", "ts", "java", "cpp", "c", "h", "cs", "go", "rs", "rb", "php", "swift", "kt"],
+        "web": ["html", "css", "scss", "sass", "less", "vue", "jsx", "tsx"],
+        "document": ["doc", "docx", "pdf", "txt", "md", "rtf", "odt"],
+        "image": ["jpg", "jpeg", "png", "gif", "bmp", "svg", "webp", "ico"],
+        "video": ["mp4", "avi", "mkv", "mov", "wmv", "flv", "webm"],
+        "audio": ["mp3", "wav", "flac", "aac", "ogg", "wma"],
+        "archive": ["zip", "rar", "7z", "tar", "gz", "bz2"],
+        "data": ["json", "xml", "csv", "yaml", "yml", "sql", "db"]
+    }
+}

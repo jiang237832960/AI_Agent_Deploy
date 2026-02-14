@@ -1,0 +1,144 @@
+{
+    "projects": {
+        "frontend": {
+            "vue3": {
+                "name": "Vue 3",
+                "description": "Vue 3 + Vite 项目",
+                "git_url": "https://github.com/vuejs/create-vue.git",
+                "install_cmd": "npm install",
+                "dev_cmd": "npm run dev",
+                "port": 5173,
+                "requires": ["node"]
+            },
+            "react": {
+                "name": "React (Vite)",
+                "description": "React + Vite 项目",
+                "git_url": "https://github.com/vitejs/vite-template-react.git",
+                "install_cmd": "npm install",
+                "dev_cmd": "npm run dev",
+                "port": 5173,
+                "requires": ["node"]
+            },
+            "nextjs": {
+                "name": "Next.js",
+                "description": "Next.js 全栈框架",
+                "git_url": "https://github.com/vercel/next.js.git",
+                "install_cmd": "npm install",
+                "dev_cmd": "npm run dev",
+                "port": 3000,
+                "requires": ["node"]
+            }
+        },
+        "python": {
+            "fastapi": {
+                "name": "FastAPI",
+                "description": "FastAPI 现代 Python Web 框架",
+                "git_url": "https://github.com/tiangolo/fastapi.git",
+                "install_cmd": "pip install -r requirements.txt",
+                "dev_cmd": "uvicorn main:app --reload",
+                "port": 8000,
+                "requires": ["python"],
+                "requirements_file": "requirements.txt"
+            },
+            "django": {
+                "name": "Django",
+                "description": "Django 全栈 Web 框架",
+                "git_url": "https://github.com/django/django.git",
+                "install_cmd": "pip install -e .",
+                "dev_cmd": "python manage.py runserver",
+                "port": 8000,
+                "requires": ["python"]
+            },
+            "flask": {
+                "name": "Flask",
+                "description": "Flask 轻量级 Web 框架",
+                "git_url": "https://github.com/pallets/flask.git",
+                "install_cmd": "pip install -r requirements.txt",
+                "dev_cmd": "flask run",
+                "port": 5000,
+                "requires": ["python"],
+                "requirements_file": "requirements.txt"
+            }
+        },
+        "nodejs": {
+            "express": {
+                "name": "Express",
+                "description": "Express Node.js Web 框架",
+                "git_url": "https://github.com/expressjs/express.git",
+                "install_cmd": "npm install",
+                "dev_cmd": "node index.js",
+                "port": 3000,
+                "requires": ["node"]
+            },
+            "nestjs": {
+                "name": "NestJS",
+                "description": "NestJS Node.js 企业级框架",
+                "git_url": "https://github.com/nestjs/typescript-starter.git",
+                "install_cmd": "npm install",
+                "dev_cmd": "npm run start:dev",
+                "port": 3000,
+                "requires": ["node"]
+            }
+        },
+        "java": {
+            "springboot": {
+                "name": "Spring Boot",
+                "description": "Spring Boot Java Web 框架",
+                "git_url": "https://github.com/spring-projects/spring-boot.git",
+                "install_cmd": "mvn install -DskipTests",
+                "dev_cmd": "mvn spring-boot:run",
+                "port": 8080,
+                "requires": ["java", "maven"]
+            }
+        },
+        "go": {
+            "gin": {
+                "name": "Gin",
+                "description": "Gin Go Web 框架",
+                "git_url": "https://github.com/gin-gonic/gin.git",
+                "install_cmd": "go mod download",
+                "dev_cmd": "go run main.go",
+                "port": 8080,
+                "requires": ["go"]
+            }
+        }
+    },
+    "tools": {
+        "node": {
+            "name": "Node.js",
+            "check_cmd": "node --version",
+            "install_url": "https://nodejs.org/zh-cn/download/",
+            "version_regex": "v(\\d+)\\.(\\d+)\\.(\\d+)"
+        },
+        "python": {
+            "name": "Python",
+            "check_cmd": "python --version",
+            "install_url": "https://www.python.org/downloads/",
+            "version_regex": "Python (\\d+)\\.(\\d+)\\.(\\d+)"
+        },
+        "java": {
+            "name": "Java",
+            "check_cmd": "java --version",
+            "install_url": "https://www.oracle.com/java/technologies/downloads/",
+            "version_regex": "(\\d+)\\.(\\d+)\\.(\\d+)"
+        },
+        "go": {
+            "name": "Go",
+            "check_cmd": "go version",
+            "install_url": "https://golang.org/dl/",
+            "version_regex": "go(\\d+)\\.(\\d+)\\.(\\d+)"
+        },
+        "rust": {
+            "name": "Rust",
+            "check_cmd": "rustc --version",
+            "install_url": "https://www.rust-lang.org/tools/install",
+            "version_regex": "rustc (\\d+)\\.(\\d+)\\.(\\d+)"
+        },
+        "docker": {
+            "name": "Docker",
+            "check_cmd": "docker --version",
+            "install_url": "https://www.docker.com/get-started/",
+            "version_regex": "Docker version (\\d+)\\.(\\d+)"
+        }
+    }
+}
